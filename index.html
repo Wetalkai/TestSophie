@@ -51,7 +51,7 @@
 
       gui.add({ loadGLB: () => loadGLB() }, 'loadGLB').name('Load GLB');
 
-      addCameraGui(); // Añade los controles para la cámara.
+    //  addCameraGui(); // Añade los controles para la cámara.
 
       animate();
     }
@@ -74,7 +74,7 @@
               if (mesh) {
                 scene.remove(mesh);
                 gui.destroy();
-                gui = new dat.GUI();
+                gui = new datGui.GUI();
                 gui.add({ loadGLB: () => loadGLB() }, 'loadGLB').name('Load GLB');
               }
 
